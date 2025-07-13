@@ -1,0 +1,19 @@
+{
+  "architectures": [
+    "EncoderWithMoE"
+  ],
+  "dropout_rate": 0.1,
+  "encoder_model_name": "bert-base-uncased",
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 256,
+  "load_balancing_loss_weight": 0.01,
+  "max_position_embeddings": 16,
+  "num_attention_heads": 8,
+  "num_experts": 4,
+  "p_threshold": 0.8,
+  "torch_dtype": "float32",
+  "transformers_version": "4.53.2",
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
