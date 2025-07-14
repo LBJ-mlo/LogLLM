@@ -80,8 +80,7 @@ stage1_data = [
     {'loss': 0.09, 'grad_norm': 6.032463073730469, 'learning_rate': 1.78e-05, 'epoch': 1.8},
     {'loss': 0.0688, 'grad_norm': 10.950860023498535, 'learning_rate': 1.9800000000000004e-05, 'epoch': 2.0}
 ]
-
-# Data for Stage 2 Training
+Data for Stage 2 Training
 stage2_data = [
     {'loss': 0.0403, 'grad_norm': 5.444004535675049, 'learning_rate': 0.0, 'epoch': 0.0}, # Corrected epoch from 0.02 to 0.0 for consistency
     {'loss': 0.0463, 'grad_norm': 2.461456060409546, 'learning_rate': 1.8e-06, 'epoch': 0.2},
@@ -95,5 +94,11 @@ stage2_data = [
     {'loss': 0.051, 'grad_norm': 13.929482460021973, 'learning_rate': 1.76e-05, 'epoch': 1.8},
     {'loss': 0.0356, 'grad_norm': 0.6225671768188477, 'learning_rate': 1.9600000000000002e-05, 'epoch': 2.0}
 ]
+
+测试结果：
+
+{'eval_loss': 0.0074135782197117805, 'eval_accuracy': 0.999375, 'eval_precision': 1.0,
+'eval_recall': 0.997907949790795,'eval_f1': 0.9989528795811519, 'eval_runtime': 91.2377,
+'eval_samples_per_second': 17.537, 'eval_steps_per_second': 0.274, 'epoch': 2.0}
 ```
 
