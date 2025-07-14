@@ -26,7 +26,7 @@ class MoEConfig(transformers.PretrainedConfig):
         hidden_size=512,
         num_attention_heads=8,
         intermediate_size=256,
-        max_position_embeddings=64,
+        max_position_embeddings=512,
         vocab_size=30522,
         type_vocab_size=2,
         dropout_rate=0.1,
@@ -302,7 +302,7 @@ class LogSequenceDataset(Dataset):
 # --- 主训练和测试逻辑 ---
 if __name__ == "__main__":
     # 1. 初始化分词器和 BERT 模型
-    encoder_model_checkpoint = "bert-base-uncased"
+    encoder_model_checkpoint = "./bert-base-uncased"
     tokenizer = AutoTokenizer.from_pretrained(encoder_model_checkpoint)
     bert_model = AutoModel.from_pretrained(encoder_model_checkpoint)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -319,7 +319,7 @@ if __name__ == "__main__":
         hidden_size=512,
         num_attention_heads=8,
         intermediate_size=256,
-        max_position_embeddings=16,
+        max_position_embeddings=64,
         vocab_size=bert_model.config.vocab_size,
         type_vocab_size=bert_model.config.type_vocab_size,
         dropout_rate=0.1,
@@ -331,8 +331,8 @@ if __name__ == "__main__":
     print(model)
 
     # 3. 准备数据集
-    max_log_entry_seq_len = 64
-    max_log_sequence_len = 16
+    max_log_entry_seq_len = 128
+    max_log_sequence_len = 32
 
     # 使用我们生成的数据文件
     data_file = "../../data/log_sequences_strings.jsonl"
