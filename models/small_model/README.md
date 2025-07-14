@@ -66,7 +66,7 @@ python moe_log_detector.py
 <img width="1345" height="783" alt="image" src="https://github.com/user-attachments/assets/7e5dd614-52c6-454c-ba8e-0f0384dd6133" />
 <img width="1361" height="792" alt="image" src="https://github.com/user-attachments/assets/0aa279d1-852d-42d7-8956-96b24f5a3788" />
 <img width="1353" height="802" alt="image" src="https://github.com/user-attachments/assets/84c6ad8e-22f6-47c4-92d7-1e3b845c1764" />
-、、、bash
+```bash
 stage1_data = [
     {'loss': 1.5013, 'grad_norm': 29.37301254272461, 'learning_rate': 0.0, 'epoch': 0.0},
     {'loss': 1.4489, 'grad_norm': 10.772336959838867, 'learning_rate': 1.8e-06, 'epoch': 0.2},
@@ -95,5 +95,5 @@ stage2_data = [
     {'loss': 0.051, 'grad_norm': 13.929482460021973, 'learning_rate': 1.76e-05, 'epoch': 1.8},
     {'loss': 0.0356, 'grad_norm': 0.6225671768188477, 'learning_rate': 1.9600000000000002e-05, 'epoch': 2.0}
 ]
-、、、
+```
 
