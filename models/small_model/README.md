@@ -126,3 +126,8 @@ Batch 5: 16条日志，耗时: 484.66 ms
 Batch 6: 16条日志，耗时: 482.38 ms
 Batch 7: 4条日志，耗时: 119.92 ms
 全部100条日志批量推理总耗时: 3166.71 ms, 平均每条: 31.67 ms
+
+<img width="1761" height="912" alt="image" src="https://github.com/user-attachments/assets/dc09b88e-015a-41d7-a3ac-b52175336bee" />
+
+<img width="489" height="355" alt="image" src="https://github.com/user-attachments/assets/ea21d933-856b-4a01-a77c-a8ccbd813247" />
+
