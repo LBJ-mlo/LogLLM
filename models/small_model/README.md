@@ -131,3 +131,11 @@ Batch 7: 4条日志，耗时: 119.92 ms
 
 <img width="489" height="355" alt="image" src="https://github.com/user-attachments/assets/ea21d933-856b-4a01-a77c-a8ccbd813247" />
 
+predict_bleu-4                 =     0.9551
+  predict_model_preparation_time =     0.0034
+  predict_rouge-1                =     4.1764
+  predict_rouge-2                =     0.1208
+  predict_rouge-l                =     1.2712
+  predict_runtime                = 0:06:58.12
+  predict_samples_per_second     =      0.048
+  predict_steps_per_second       =      0.048
